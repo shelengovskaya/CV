@@ -1,0 +1,148 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% Set document class and font size
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% Name and date of last update to this document
+\noindent{\Huge{Lizaveta Shelianhouskaya}}
+
+% --- Contact information and other items ---
+
+\vspace{0.5cm} 
+\begin{center}
+\begin{tabular}{lll}
+% Line 1: Email, GitHub, office location
+\textbf{Email}: eashelengovskaya@edu.hse.ru      &
+\hspace{0.1in} \textbf{GitHub}: shelengovskaya    &
+\hspace{0.1in} 	\textbf{Date of birth}: 22.06.2002 \\
+
+% Line 2: Phone number, citizenship
+\textbf{Phone}: +375447401309   & 
+\hspace{0.1in} \textbf{Citizenship}: Belarus 
+\end{tabular}
+\end{center}
+
+% --- Start the two-column table storing the main content ---
+
+% Set spacing between columns
+\setlength{\tabcolsep}{4pt}
+
+% Set the width of each column
+\begin{longtable}{p{1.3in}p{4.8in}}
+
+% --- Section: Research interests ---
+
+\nohyphens{\color{OliveGreen}{Objective}}
+& Hard-working and motivated Computer Science student seeking an internship to utilize my
+education while gaining valuable work experience in a team. \\
+& \\
+
+% --- Section: Education ---
+
+\color{OliveGreen}{Education} 
+& \textbf{Higher School of Economics} \hfill Moscow, Russia \\ 
+& Bachelor of Computer Science \hfill September 2019 -- Present \\
+& Educational Program: Applied Mathematics and Information Science\\
+& {\it GPA 8.2/10}\\
+& Expected graduation date 2023\\
+& \\
+
+& \textbf{Secondary School №14} \hfill Molodechno, Belarus \\
+& Profile: Mathematics, Physics. \hfill 2008 -- 2019\\
+& {\it GPA: 10/10}\\
+& \\
+
+
+
+{\color{OliveGreen}{Additional}}
+& \textbf{Software Development course ("Itransition")} \hfill Minsk, Belarus\\
+{\color{OliveGreen}{Education}} 
+& Java / Spring / JavaScript / MySQL \hfill January 2021 -- Present\\
+& \\
+
+& \textbf{Summer Camp Profile “BIT”} \\
+& Learning C++, Algorithms and Data Structures \hfill July 2018, June 2017 \\
+& \\
+
+& \textbf{Children’s Music School} \hfill Molodechno, Belarus\\
+& Class Piano Program\hfill 2010 -- 2017\\
+& \\
+
+
+{\color{OliveGreen}{Aware and}} 
+& III diploma in the Belarusian Republican Olympiad in Informatics,\hfill 2019\\
+{\color{OliveGreen}{achievements}} 
+& 3rd stage \\
+& III diploma in the Global Scholarship Competition in Mathematics \hfill 2018\\
+& 3rd place in the Republican Internet-Olympiad in Informatics  \hfill 2017\\
+& \\
+
+% --- Section: Publications ---
+\nohyphens{\color{OliveGreen}{Technical skills}}
+& 1. Knowledge of C++, Java, Python, Pascal, Delphi, Bash. \\
+& 2. Experience with the Qt (C++) and Spring (Java) frameworks. \\
+& 3. Flexible with the build environments Linux, Windows. \\
+& 4. Familiarity with the use of Vim, CLion, PyCharm, MC Office, Google Disk. \\
+& 5. Working on Cisco Packet Tracer. \\
+& 6. Knowledge of Algorithms and Data Structures. \\
+& 7. Experience in Object Oriented concepts. \\
+& 8. First author, second author, third author, fourth author. \\
+& \\
+
+% --- Section: Research experience ---
+
+\nohyphens{\color{OliveGreen}{Soft skills}} 
+& Fast Learning \hfill Organizational skills \\
+& Creativity \hfill Communication Skills \\
+& Time-management \hfill Teamwork \\  
+& Adaptability \hfill Problem-Solving \\
+& \\
+
+% --- Section: Talks and tutorials ---
+
+{\color{OliveGreen}{Languages}} 
+& Russian (native) \\
+& Belarusian (native) \\
+& English (fluent) \\
+& \\
+
+% --- Section: Other interests/hobbies ---
+
+\nohyphens{\color{OliveGreen}{Other interests}} 
+& 1. Reading the books. \\
+& 2. Playing the piano, the guitar. \\
+& 3. Exploring distant lands.\\
+
+% --- End of CV! ---
+
+\end{longtable}
+\end{document}
