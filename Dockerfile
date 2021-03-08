@@ -5,4 +5,4 @@ RUN yum clean all && yum install -y \
 	
 COPY resume /code
 
-CMD [ "bash" ]
+CMD [ "bash", "./action.sh" ]
