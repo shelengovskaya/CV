@@ -6,3 +6,5 @@ RUN yum clean all && yum install -y \
 COPY resume /code
 
 CMD [ "bash" ]
+
+pdflatex -interaction=nonstopmode resume/main.tex
