@@ -1,0 +1,11 @@
+on: push
+
+jobs:
+  resume_collector:
+    runs-on: ubuntu-latest
+    name: A job to collect resume
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Upload resume
+        uses: ./
