@@ -1,7 +1,13 @@
 name: CI for Docker
 on: push
 
-defaults:
-  run:
-    shell: bash
-    working-directory: ./action.yml
+jobs:
+  super-lint:
+    name: Lint code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        env:
+          DEFAULT_BRANCH: main
+          run: ./action.yml
