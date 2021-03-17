@@ -1,14 +1,11 @@
-name: CI for Docker
-on: [push]
+on: push
 
 jobs:
-  hello_world_job:
+  CI:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: CI for Dockerfile
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
+      - name: run Dockerfile
+        uses: ./
