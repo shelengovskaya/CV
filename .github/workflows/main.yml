@@ -1,5 +1,7 @@
 name: CI for Docker
-on:
-  push:
-    paths:
-    - 'action.yml'
+on: push
+
+jobs:
+    first_job:
+      name: hello
+      runs-on: ../action.yml
