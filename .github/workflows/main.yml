@@ -1,8 +1,5 @@
-name: Super-Linter
-on: push
-jobs:
-  super-lint:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - run: "action.yml"
+name: CI for Docker
+on:
+  push:
+    paths:
+    - 'action.yml'
