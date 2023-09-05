@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pdflatex -interaction=nonstopmode resume/main.tex
+pdflatex -interaction=nonstopmode main.tex
